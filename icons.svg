@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="checkmark" viewBox="0 0 24 25">
+        <path
+         fill='none'
+            d="M19.75 7.49072L10.493 16.7477C10.3055 16.9352 10.0512 17.0405 9.786 17.0405C9.52084 17.0405 9.26653 16.9352 9.079 16.7477L4.25 11.9187"
+            stroke="#36D33B"
+            stroke-width="3"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+        />
+    </symbol>
+</svg>

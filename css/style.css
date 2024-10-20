@@ -544,6 +544,101 @@ h6 {
     max-width: none;
   }
 }
+.wrapper .section__about .subtitle {
+  line-height: 50px;
+}
+@media only screen and (max-width: 48rem) {
+  .wrapper .section__about .subtitle {
+    font-size: 1.25rem !important;
+    line-height: 28px;
+  }
+}
+.wrapper .section__tac .block {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.wrapper .section__tac .block .item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.wrapper .section__tac .block .item svg {
+  width: 18px;
+}
+.wrapper .section__tac .block .item p {
+  width: 100%;
+}
+@media only screen and (max-width: 48rem) {
+  .wrapper .section__tac .block .item p {
+    font-size: 16px;
+  }
+}
+.wrapper .section__policy .block {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.wrapper .section__policy .block .item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.wrapper .section__policy .block .item svg {
+  width: 18px;
+}
+.wrapper .section__policy .block .item p {
+  width: 100%;
+}
+@media only screen and (max-width: 48rem) {
+  .wrapper .section__policy .block .item p {
+    font-size: 16px;
+  }
+}
+.wrapper .section__faqs .faqs-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.wrapper .section__faqs .faqs-container .faqs-btn {
+  width: 100%;
+  background-color: #edf6f9;
+  padding: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrapper .section__faqs .faqs-container .faqs-btn::after {
+  content: "+"; /* Плюсик */
+  color: #333;
+  transition: transform 0.2s ease;
+  transform: rotate(90deg);
+  font-size: 24px;
+}
+.wrapper .section__faqs .faqs-container .faqs-btn.active::after {
+  content: "−"; /* Мінус */
+  transform: rotate(180deg);
+}
+.wrapper .section__faqs .faqs-container .faqs-block {
+  border-top: 1px solid #a6e0ff;
+  width: 100%;
+  opacity: 0;
+  display: none;
+  padding: 16px;
+  background-color: #edf6f9;
+  line-height: 1.5;
+  transition: 0.2s;
+}
+.wrapper .section__faqs .faqs-container .faqs-block.active {
+  opacity: 1;
+  display: block;
+}
 
 @media only screen and (max-width: 48rem) {
   .wrapper {

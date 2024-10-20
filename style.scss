@@ -292,6 +292,7 @@ h6 {
       }
     }
   }
+  //index//
   .section__hero {
     background-color: $pr1;
     background-image: url(../img/heroimg.png);
@@ -572,6 +573,125 @@ h6 {
             max-width: none;
           }
         }
+      }
+    }
+  }
+  //about//
+  .section__about {
+    .subtitle {
+      line-height: 50px;
+    }
+  }
+  @media only screen and (max-width: 48rem) {
+    .section__about {
+      .subtitle {
+        font-size: 1.25rem !important;
+        line-height: 28px;
+      }
+    }
+  }
+  .section__tac {
+    .block {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      .item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        svg {
+          width: 18px;
+        }
+        p {
+          width: 100%;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 48rem) {
+    .section__tac {
+      .block {
+        .item {
+          p {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+  .section__policy {
+    .block {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      .item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        svg {
+          width: 18px;
+        }
+        p {
+          width: 100%;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 48rem) {
+    .section__policy {
+      .block {
+        .item {
+          p {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+  .section__faqs {
+    .faqs-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin: 0 auto;
+      overflow: hidden;
+      .faqs-btn {
+        width: 100%;
+        background-color: $pr5;
+        padding: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .faqs-btn::after {
+        content: "\002B"; /* Плюсик */
+        color: #333;
+        transition: transform 0.2s ease;
+        transform: rotate(90deg);
+        font-size: 24px;
+      }
+      .faqs-btn.active::after {
+        content: "\2212"; /* Мінус */
+        transform: rotate(180deg);
+      }
+      .faqs-block {
+        border-top: 1px solid $pr4;
+        width: 100%;
+        opacity: 0;
+        display: none;
+        padding: 16px;
+        background-color: $pr5;
+        line-height: 1.5;
+        transition: 0.2s;
+      }
+
+      .faqs-block.active {
+        opacity: 1;
+        display: block;
       }
     }
   }

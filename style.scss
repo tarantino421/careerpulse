@@ -468,9 +468,9 @@ h6 {
           border-bottom: 1px solid $pr2 !important;
           font-size: 1.125rem;
           td {
-            height: 40px;
+            height: 48px;
             width: 50%;
-            padding: 8px 16px;
+            padding: 4px 16px;
             text-align: left; /* Вирівнює текст по лівому краю */
           }
           .td2 {
@@ -500,8 +500,82 @@ h6 {
       }
     }
   }
+  .section__reviews {
+    .content {
+      .block {
+        display: flex;
+        gap: clamp(18px, 3vw, 60px);
+        .line-thin {
+          background-color: $pr4;
+        }
+        .item {
+          background-color: $pr5;
+          padding: clamp(18px, 3vw, 36px);
+          display: flex;
+          flex-direction: column;
+          gap: 24px;
+          max-width: 640px;
+          .item__title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .info {
+              display: flex;
+              gap: 12px;
+              align-items: center;
+              svg {
+                width: 32px;
+              }
+              .column {
+                display: flex;
+                flex-direction: column;
+                gap: 0px;
+              }
+            }
+          }
+        }
+        .grid {
+          width: 100%;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: clamp(8px, 2vw, 24px);
+          .grid__item {
+            min-width: 160px;
+            align-items: center;
+            background-color: $pr5;
+            justify-content: center;
+            padding: 12px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            width: 100%;
+            img {
+              object-fit: cover;
+              height: 30px;
+              width: 140px;
+            }
+            .rating {
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 48rem) {
+    .section__reviews {
+      .content {
+        .block {
+          display: flex;
+          flex-direction: column;
+          .item {
+            max-width: none;
+          }
+        }
+      }
+    }
+  }
 }
-
 @media only screen and (max-width: 48rem) {
   .wrapper {
     padding-top: 65px;

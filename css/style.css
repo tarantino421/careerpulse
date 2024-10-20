@@ -497,6 +497,9 @@ h6 {
   justify-content: space-between;
   align-items: center;
 }
+.wrapper .section__reviews .content .block .item .item__title .rating svg {
+  width: 18px;
+}
 .wrapper .section__reviews .content .block .item .item__title .info {
   display: flex;
   gap: 12px;
@@ -542,6 +545,9 @@ h6 {
   }
   .wrapper .section__reviews .content .block .item {
     max-width: none;
+  }
+  .wrapper .section__reviews .content .block .item svg {
+    width: 16px;
   }
 }
 .wrapper .section__about .subtitle {
